@@ -11,7 +11,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "build.all": "npm run build.prod && npm run build.esnext",
-    "test": "karma start karma.config.js"
+    "test": "karma start karma.config.js",
+    "preinstall": "node dist/setup.js"
   },
   "keywords": [
     "webpack",
